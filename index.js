@@ -79,7 +79,7 @@ pilih.forEach(function (milih) {
         setTimeout(function () {
             const info = document.querySelector('.info');
             info.innerHTML = hasil;
-        }, 1000);
+        }, );
 
         // setelah selesai nampilin info menang ato kalah, background user di hapus/reset (biar ga dobel dengan pilihan user sebelumnya)
         resetBackgroundUser()
@@ -88,12 +88,6 @@ pilih.forEach(function (milih) {
     });
 });
 
-
-function refreshPage() {
-    resetBackgroundCom()
-    resetBackgroundUser()
-    resetHasil ()
-}
 
 function resetHasil() {
     const info = document.querySelector('.info');
@@ -105,3 +99,8 @@ function resetHasil() {
     info.appendChild(img)
 }
 
+function refreshPage() {
+    resetBackgroundCom()
+    resetBackgroundUser()
+    resetHasil ()
+}
